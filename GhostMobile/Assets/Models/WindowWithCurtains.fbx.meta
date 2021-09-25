@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4f228f546574a489291fbd14f7e9cbf7
+guid: 394fb69c06ae049eb89c2cd135784856
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
@@ -8,22 +8,22 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Curtains
-    second: {fileID: 2100000, guid: 392f6cff7b3bc480c82964c97fc4c4a4, type: 2}
+    second: {fileID: 2100000, guid: ccfdcee89c31d49899de6c3bd2b87fd4, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: WindowGlass
-    second: {fileID: 2100000, guid: 16f7ff53919854106832bbde352dbf9a, type: 2}
+    second: {fileID: 2100000, guid: 357492e30e52445d686fe86aa09e672a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: WindowHardWare
-    second: {fileID: 2100000, guid: 6e2d9ca1a78124a17ab80d5719b6e83d, type: 2}
+    second: {fileID: 2100000, guid: a3832a3f332254173860adcba47ddd9d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: WindowSeal
-    second: {fileID: 2100000, guid: 11a0d9b316d004b16b3c4278ebdff1a8, type: 2}
+    second: {fileID: 2100000, guid: f1f6ec40ca4e64557bcc0b109c844f83, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

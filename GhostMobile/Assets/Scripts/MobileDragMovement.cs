@@ -9,8 +9,9 @@ public class MobileDragMovement : MonoBehaviour
         if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved)
         {
             touchPosition = Input.GetTouch(0).deltaPosition;
-            transform.Translate(touchPosition.x * speed * Time.deltaTime, 0, touchPosition.z * speed * Time.deltaTime);
-            
+            //transform.Translate(touchPosition.x * speed * Time.deltaTime, 0, touchPosition.z * speed * Time.deltaTime);
+            Camera.main.ScreenToWorldPoint(touchPosition * speed * Time.deltaTime);
+            transform.Translate(touchPosition);
         }
     }
 }
