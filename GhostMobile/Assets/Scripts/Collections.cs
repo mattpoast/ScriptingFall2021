@@ -1,14 +1,7 @@
+using System.Collections.Generic;
 using UnityEngine;
+[CreateAssetMenu]
 public class Collections : ScriptableObject
 {
-    
-    void Start()
-    {
-        
-    }
-    
-    void Update()
-    {
-        
-    }
+    public List<KeysSO> collections;
 }
