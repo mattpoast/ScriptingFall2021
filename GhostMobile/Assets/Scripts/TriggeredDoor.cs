@@ -8,6 +8,6 @@ public class TriggeredDoor : MonoBehaviour
     }
     public void OnTriggerExit(Collider other)
     {
-        doorAnimator.SetBool("Close Door", false);
+        doorAnimator.SetBool("Open Door", false);
     }
 }

@@ -1,27 +1,24 @@
 fileFormatVersion: 2
-guid: 944b270ec34214e58bd38df38e14f47c
+guid: ca4921f2d6175463bbdf71b15e89b0a9
 ModelImporter:
   serializedVersion: 20200
-  internalIDToNameTable:
-  - first:
-      74: 1827226128182048838
-    second: DoorOpen
+  internalIDToNameTable: []
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: DoorAccent
-    second: {fileID: 2100000, guid: 3131fea3e95844e67b39c12149499fa6, type: 2}
+    second: {fileID: 2100000, guid: 852ef0381afb746d6a0e72428c7cef7e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: DoorBody
-    second: {fileID: 2100000, guid: 0866de60d486d4f1e934626c2f1363af, type: 2}
+      name: DoorFrame
+    second: {fileID: 2100000, guid: 7f7e97e3049c3436db15d872988d435d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: DoorKnob
-    second: {fileID: 2100000, guid: 735d38e19e111462e94cc944379ae98c, type: 2}
+      name: DoorHardWare
+    second: {fileID: 2100000, guid: 9860397d3681b48199e1d09ac1ab7845, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -48,36 +45,7 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: DoorOpen
-      takeName: Take 001
-      internalID: 0
-      firstFrame: 1
-      lastFrame: 13
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 1
+    clipAnimations: []
     isReadable: 0
   meshes:
     lODScreenPercentages: []
