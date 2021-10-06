@@ -6,7 +6,8 @@ public class Movement : MonoBehaviour
     
     void Update()
     {
-        Vector3 move = new Vector3(Input.touchCount, 0, Input.touchCount);
-        controller.Move(move * moveSpeed * Time.deltaTime);
+        Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+
+        controller.Move(move * Time.deltaTime * moveSpeed);
     }
 }
