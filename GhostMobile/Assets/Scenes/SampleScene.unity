@@ -2243,7 +2243,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.09027874, y: 0.07845555, z: 0.082590185}
   m_Center: {x: 0.0030232177, y: 0.03150143, z: -0.00018463093}
---- !u!114 &716505228
+--- !u!114 &716505227
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2252,10 +2252,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 716505224}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf398e19eabb54befbbc5fc1f42e5834, type: 3}
+  m_Script: {fileID: 11500000, guid: 92a52b5c5db4a486cabf7c982b4ec73b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorAnimator: {fileID: 716505225}
+  animator: {fileID: 716505225}
 --- !u!1001 &740373800
 PrefabInstance:
   m_ObjectHideFlags: 0
