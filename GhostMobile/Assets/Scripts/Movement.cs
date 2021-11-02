@@ -8,6 +8,7 @@ public class Movement : MonoBehaviour
     {
         Vector3 move = new Vector3(Input.GetAxis("Horizontal"), gravity, Input.GetAxis("Vertical"));
         controller.Move(move * Time.deltaTime * moveSpeed);
+        move.Normalize();
         if (controller.isGrounded)
         {
             gravity = 0f;
