@@ -11,19 +11,22 @@ public class KeyCollection : MonoBehaviour
     }
     public void OnTriggerEnter(Collider other)
     {
-        KeyList.keyCount += 1;
-        if (KeyList.keyCount == 1)
+        if (other.gameObject.name == "Ghost")
         {
-            key1Color.enabled = true;
+            KeyList.keyCount += 1;
+            if (KeyList.keyCount == 1)
+            {
+                key1Color.enabled = true;
+            }
+            if (KeyList.keyCount == 2)
+            {
+                key2Color.enabled = true;
+            }
+            if (KeyList.keyCount == 3)
+            {
+                key3Color.enabled = true;
+            }
+            Destroy(gameObject);
         }
-        if (KeyList.keyCount == 2)
-        {
-            key2Color.enabled = true;
-        }
-        if (KeyList.keyCount == 3)
-        {
-            key3Color.enabled = true;
-        }
-        Destroy(gameObject);
     }
 }
