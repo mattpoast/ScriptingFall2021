@@ -24,28 +24,24 @@ public class VaccumAi : MonoBehaviour
                 if (Vector3.Distance(transform.position, patrolZero) < 3.5f)
                 {
                     NewLocation();
-                    print("working");
                 }
                 break;
             case 1: vaccum.destination = patrolOne;
                 if (Vector3.Distance(transform.position, patrolOne) < 3.5f)
                 {
                     NewLocation();
-                    print("working1");
                 }
                 break;
             case 2: vaccum.destination = patrolTwo;
                 if (Vector3.Distance(transform.position, patrolTwo) < 3.5f)
                 {
                     NewLocation();
-                    print("working2");
                 }
                 break;
             case 3: vaccum.destination = patrolThree;
                 if (Vector3.Distance(transform.position, patrolThree) < 3.5f)
                 {
                     NewLocation();
-                    print("working3");
                 }
                 break;
         }
