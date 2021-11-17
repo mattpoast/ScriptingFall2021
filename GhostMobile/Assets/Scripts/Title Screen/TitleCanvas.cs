@@ -4,12 +4,11 @@ using UnityEngine.UI;
 public class TitleCanvas : MonoBehaviour
 {
     public GameObject GhostColor;
-    public Material[] Colors;
+    public  Material[] Colors;
     public int CurrentColorNum;
-    public Material CurrentColor;
+    public static Material CurrentColor;
     public Material NewColor;
     public string GameScene;
-    public Text ColorText;
     public string ColorName;
     private void Awake()
     {
@@ -17,7 +16,6 @@ public class TitleCanvas : MonoBehaviour
         CurrentColor = Colors[CurrentColorNum];
         ColorName = "" + CurrentColor;
         ColorName = ColorName.Replace("(UnityEngine.Material)", "");
-        ColorText.text = "" + ColorName;
     }
     public void StartButton()
     {
@@ -36,7 +34,6 @@ public class TitleCanvas : MonoBehaviour
             CurrentColor = Colors[CurrentColorNum];
             ColorName = "" + CurrentColor;
             ColorName = ColorName.Replace("(UnityEngine.Material)", "");
-            ColorText.text = "" + ColorName;
             ColorChange();
         }
         else
@@ -45,7 +42,6 @@ public class TitleCanvas : MonoBehaviour
             CurrentColor = Colors[CurrentColorNum];
             ColorName = "" + CurrentColor;
             ColorName = ColorName.Replace("(UnityEngine.Material)", "");
-            ColorText.text = "" + ColorName;
             ColorChange();
         }
     }
@@ -57,7 +53,6 @@ public class TitleCanvas : MonoBehaviour
         CurrentColor = Colors[CurrentColorNum];
         ColorName = "" + CurrentColor;
         ColorName = ColorName.Replace("(UnityEngine.Material)", "");
-        ColorText.text = "" + ColorName;
         ColorChange();
     }
 }

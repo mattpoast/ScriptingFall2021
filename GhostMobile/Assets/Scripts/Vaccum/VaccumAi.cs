@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
+using Random = UnityEngine.Random;
+
 public class VaccumAi : MonoBehaviour
 {
     public float vacuumSpeed = 6f;
@@ -7,6 +9,11 @@ public class VaccumAi : MonoBehaviour
     public GameObject ghost;
     public int vacuumDestination;
     public Vector3 patrolZero, patrolOne, patrolTwo, patrolThree;
+    public float distance;
+    public float gameOverDistance = 5f;
+    public Vector3 ghostLocation;
+    public float ghostChase = 15f;
+    public float slowVacuumSpeed = 2.9f;
     public void Start()
     {
         NewLocation();
@@ -17,7 +24,14 @@ public class VaccumAi : MonoBehaviour
         vacuumDestination = Random.Range(0, 4);
     }
     void Update()
-    {
+    { 
+        ghostLocation = ghost.transform.position;
+        Vector3 distanceVector = transform.position - ghostLocation;
+        distance = distanceVector.magnitude;
+        if (distance <= gameOverDistance)
+        {
+            print("gameOver");
+        }
         switch (vacuumDestination)
         {
             case 0: vaccum.destination = patrolZero;
@@ -25,11 +39,31 @@ public class VaccumAi : MonoBehaviour
                 {
                     NewLocation();
                 }
+                if (distance <= ghostChase)
+                {
+                    vaccum.speed = slowVacuumSpeed;
+                    vaccum.destination = ghostLocation;
+                    if (distance >= ghostChase)
+                    {
+                        vaccum.speed = vacuumSpeed;
+                        NewLocation();
+                    }
+                }
                 break;
             case 1: vaccum.destination = patrolOne;
                 if (Vector3.Distance(transform.position, patrolOne) < 3.5f)
                 {
                     NewLocation();
+                }
+                if (distance <= ghostChase)
+                {
+                    vaccum.speed = slowVacuumSpeed;
+                    vaccum.destination = ghostLocation;
+                    if (distance >= ghostChase)
+                    {
+                        vaccum.speed = vacuumSpeed;
+                        NewLocation();
+                    }
                 }
                 break;
             case 2: vaccum.destination = patrolTwo;
@@ -37,11 +71,31 @@ public class VaccumAi : MonoBehaviour
                 {
                     NewLocation();
                 }
+                if (distance <= ghostChase)
+                {
+                    vaccum.speed = slowVacuumSpeed;
+                    vaccum.destination = ghostLocation;
+                    if (distance >= ghostChase)
+                    {
+                        vaccum.speed = vacuumSpeed;
+                        NewLocation();
+                    }
+                }
                 break;
             case 3: vaccum.destination = patrolThree;
                 if (Vector3.Distance(transform.position, patrolThree) < 3.5f)
                 {
                     NewLocation();
+                }
+                if (distance <= ghostChase)
+                {
+                    vaccum.speed = slowVacuumSpeed;
+                    vaccum.destination = ghostLocation;
+                    if (distance >= ghostChase)
+                    {
+                        vaccum.speed = vacuumSpeed;
+                        NewLocation();
+                    }
                 }
                 break;
         }
