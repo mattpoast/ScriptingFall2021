@@ -8,6 +8,7 @@ public class QuitButton : MonoBehaviour
     public string MainMenu;
     public void Quit()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(MainMenu);
     }
 }

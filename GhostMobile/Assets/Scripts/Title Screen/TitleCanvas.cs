@@ -19,6 +19,7 @@ public class TitleCanvas : MonoBehaviour
     }
     public void StartButton()
     {
+        Time.timeScale = 1;
        SceneManager.LoadScene(GameScene);
     }
     public void ColorChange()
