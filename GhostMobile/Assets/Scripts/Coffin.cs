@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 public class Coffin : MonoBehaviour
 {
     public Animator animator;
@@ -19,6 +21,11 @@ public class Coffin : MonoBehaviour
         if (KeyList.keyCount == 3)
         {
             animator.SetBool("KeyThree", true);
+            Invoke("WinGame", 3f);
         }
+    }
+    public void WinGame()
+    {
+        SceneManager.LoadScene(3);
     }
 }

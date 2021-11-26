@@ -8,7 +8,6 @@ public class TitleCanvas : MonoBehaviour
     public int CurrentColorNum;
     public static Material CurrentColor;
     public Material NewColor;
-    public string GameScene;
     public string ColorName;
     private void Awake()
     {
@@ -20,7 +19,7 @@ public class TitleCanvas : MonoBehaviour
     public void StartButton()
     {
         Time.timeScale = 1;
-       SceneManager.LoadScene(GameScene);
+       SceneManager.LoadScene(1);
     }
     public void ColorChange()
     {

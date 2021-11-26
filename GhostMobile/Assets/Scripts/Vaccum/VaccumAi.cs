@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 public class VaccumAi : MonoBehaviour
@@ -10,10 +11,11 @@ public class VaccumAi : MonoBehaviour
     public int vacuumDestination;
     public Vector3 patrolZero, patrolOne, patrolTwo, patrolThree;
     public float distance;
-    public float gameOverDistance = 5f;
+    public float gameOverDistance = 3f;
     public Vector3 ghostLocation;
     public float ghostChase = 15f;
     public float slowVacuumSpeed = 2.9f;
+    public static bool fadeOut;
     public void Start()
     {
         NewLocation();
@@ -30,7 +32,9 @@ public class VaccumAi : MonoBehaviour
         distance = distanceVector.magnitude;
         if (distance <= gameOverDistance)
         {
-            print("gameOver");
+            fadeOut = true;
+            Invoke("LoadNewSceen",2f);
+            vaccum.speed = .01f;
         }
         switch (vacuumDestination)
         {
@@ -99,5 +103,9 @@ public class VaccumAi : MonoBehaviour
                 }
                 break;
         }
+    }
+    void LoadNewSceen()
+    {
+        SceneManager.LoadScene(2);
     }
 }
