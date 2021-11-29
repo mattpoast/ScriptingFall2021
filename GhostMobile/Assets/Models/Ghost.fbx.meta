@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f10733b862edc416ea3b1569776bd451
+guid: 06852ed268e404a2b85f1e0146bf5486
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
@@ -10,13 +10,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: GhostBody
-    second: {fileID: 2100000, guid: 817b0f3c5cf3f4d28ae0ca00976f9b99, type: 2}
+      name: GhostHiRes_GhostBody
+    second: {fileID: 2100000, guid: 5d6158ca1998548d6a55a368bc4c781f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: GhostEye3
-    second: {fileID: 2100000, guid: 9d087a8fa36924e119efb7f13f723049, type: 2}
+      name: GhostHiRes_GhostEye3
+    second: {fileID: 2100000, guid: 7413e5b23aa9b41238c6bd74d8ff2706, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -49,7 +49,7 @@ ModelImporter:
       takeName: Take 001
       internalID: 0
       firstFrame: 1
-      lastFrame: 25
+      lastFrame: 31
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -87,7 +87,7 @@ ModelImporter:
     importLights: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1

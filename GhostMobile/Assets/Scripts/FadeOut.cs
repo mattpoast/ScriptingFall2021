@@ -12,5 +12,9 @@ public class FadeOut : MonoBehaviour
         {
            fadeOutAnimator.SetTrigger("Out");
         }
+        if (Coffin.wonGame)
+        {
+            fadeOutAnimator.SetTrigger("Out");
+        }
     }
 }

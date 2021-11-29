@@ -1,9 +1,9 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
 public class Coffin : MonoBehaviour
 {
     public Animator animator;
+    public static bool wonGame;
     public void OnTriggerEnter(Collider other)
     {
         if (KeyList.keyCount == 0)
@@ -21,7 +21,8 @@ public class Coffin : MonoBehaviour
         if (KeyList.keyCount == 3)
         {
             animator.SetBool("KeyThree", true);
-            Invoke("WinGame", 3f);
+            Invoke("WinGame", 2.5f);
+            wonGame = true;
         }
     }
     public void WinGame()

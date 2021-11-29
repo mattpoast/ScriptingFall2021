@@ -2,7 +2,6 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
-
 public class VaccumAi : MonoBehaviour
 {
     public float vacuumSpeed = 6f;
@@ -23,6 +22,7 @@ public class VaccumAi : MonoBehaviour
     }
     private void NewLocation()
     {
+        vaccum.speed = vacuumSpeed;
         vacuumDestination = Random.Range(0, 4);
     }
     void Update()
@@ -49,7 +49,6 @@ public class VaccumAi : MonoBehaviour
                     vaccum.destination = ghostLocation;
                     if (distance >= ghostChase)
                     {
-                        vaccum.speed = vacuumSpeed;
                         NewLocation();
                     }
                 }
@@ -65,7 +64,6 @@ public class VaccumAi : MonoBehaviour
                     vaccum.destination = ghostLocation;
                     if (distance >= ghostChase)
                     {
-                        vaccum.speed = vacuumSpeed;
                         NewLocation();
                     }
                 }
@@ -81,7 +79,6 @@ public class VaccumAi : MonoBehaviour
                     vaccum.destination = ghostLocation;
                     if (distance >= ghostChase)
                     {
-                        vaccum.speed = vacuumSpeed;
                         NewLocation();
                     }
                 }
@@ -97,7 +94,6 @@ public class VaccumAi : MonoBehaviour
                     vaccum.destination = ghostLocation;
                     if (distance >= ghostChase)
                     {
-                        vaccum.speed = vacuumSpeed;
                         NewLocation();
                     }
                 }

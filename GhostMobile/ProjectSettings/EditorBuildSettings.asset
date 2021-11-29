@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/DeathScreen.unity
     guid: e241bac7174714f488d2e2dfcb6d5091
   - enabled: 1
+    path: Assets/Scenes/WinAnimation.unity
+    guid: c97fc5b3b2029450b90998c10b5666ce
+  - enabled: 1
     path: Assets/Scenes/ScoreScreen.unity
     guid: db09ecc8e5588404d9723b64cb89b0fc
   m_configObjects: {}
