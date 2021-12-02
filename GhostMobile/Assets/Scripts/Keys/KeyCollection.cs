@@ -3,6 +3,8 @@ using UnityEngine.UI;
 public class KeyCollection : MonoBehaviour
 {
     public Image key1Color, key2Color, key3Color;
+    public AudioClip keyPickUp;
+    private Vector3 audioLocation;
     public void Start()
     {
         key1Color.enabled = false;
@@ -13,6 +15,7 @@ public class KeyCollection : MonoBehaviour
     {
         if (other.gameObject.name == "Ghost")
         {
+            AudioSource.PlayClipAtPoint(keyPickUp,audioLocation,10);
             KeyList.keyCount += 1;
             if (KeyList.keyCount == 1)
             {

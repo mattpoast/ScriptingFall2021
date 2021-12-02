@@ -10,7 +10,7 @@ public class VaccumAi : MonoBehaviour
     public int vacuumDestination;
     public Vector3 patrolZero, patrolOne, patrolTwo, patrolThree;
     public float distance;
-    public float gameOverDistance = 3f;
+    public float gameOverDistance = 1.5f;
     public Vector3 ghostLocation;
     public float ghostChase = 15f;
     public float slowVacuumSpeed = 2.9f;
@@ -19,6 +19,7 @@ public class VaccumAi : MonoBehaviour
     {
         NewLocation();
         vaccum.speed = vacuumSpeed;
+        fadeOut = false;
     }
     private void NewLocation()
     {

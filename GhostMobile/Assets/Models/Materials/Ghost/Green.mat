@@ -10,7 +10,7 @@ Material:
   m_Name: Green
   m_Shader: {fileID: 47, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _EMISSION
-  m_LightmapFlags: 1
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -78,5 +78,5 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 0.7647059, g: 1, b: 0.7820328, a: 1}
-    - _EmissionColor: {r: 0.36078432, g: 0.60784316, b: 0.4061559, a: 1}
+    - _EmissionColor: {r: 0.39048594, g: 0.7075472, b: 0.44959906, a: 1}
   m_BuildTextureStacks: []
