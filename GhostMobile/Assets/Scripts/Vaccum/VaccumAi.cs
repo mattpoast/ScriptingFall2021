@@ -12,7 +12,7 @@ public class VaccumAi : MonoBehaviour
     public float distance;
     public float gameOverDistance = 1.5f;
     public Vector3 ghostLocation;
-    public float ghostChase = 15f;
+    public float ghostChase = 10f;
     public float slowVacuumSpeed = 2.9f;
     public static bool fadeOut;
     public void Start()

@@ -5,9 +5,16 @@ public class Coffin : MonoBehaviour
     public Animator animator;
     public static bool wonGame;
     public AudioSource keyUnLock;
+    public float clock;
+    public int timeBonus;
     public void Start()
     {
         wonGame = false;
+        clock = 0;
+    }
+    public void FixedUpdate()
+    {
+        clock += 1 * Time.deltaTime;
     }
     public void OnTriggerEnter(Collider other)
     {
@@ -27,6 +34,24 @@ public class Coffin : MonoBehaviour
         }
         if (KeyList.keyCount == 3)
         {
+            if (clock <= 120)
+            {
+                timeBonus = PlayerPrefs.GetInt("Coins");
+                timeBonus += 15;
+                PlayerPrefs.SetInt("Coins", timeBonus);
+            }
+            if (clock > 120 && clock < 200)
+            {
+                timeBonus = PlayerPrefs.GetInt("Coins");
+                timeBonus += 10;
+                PlayerPrefs.SetInt("Coins", timeBonus);
+            }
+            if (clock > 200)
+            {
+                timeBonus = PlayerPrefs.GetInt("Coins");
+                timeBonus += 5;
+                PlayerPrefs.SetInt("Coins", timeBonus); 
+            }
             animator.SetBool("KeyThree", true);
             keyUnLock.Play();
             Invoke("WinGame", 2.5f);

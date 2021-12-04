@@ -6,7 +6,7 @@ public class ChaseMusic : MonoBehaviour
     public GameObject menuMusic;
     public float distance;
     public GameObject vacuum;
-    public float chased = 14f;
+    public float chased = 10f;
     public Vector3 vacuumLocation;
     public void Start()
     {

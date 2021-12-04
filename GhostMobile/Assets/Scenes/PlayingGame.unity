@@ -7151,6 +7151,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 716505225}
   keyUnLock: {fileID: 716505228}
+  clock: 0
+  timeBonus: 0
 --- !u!82 &716505228
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15029,7 +15031,7 @@ MonoBehaviour:
   patrolTwo: {x: 14.5, y: 11.48, z: 25.37}
   patrolThree: {x: 12.05, y: 0.48, z: 0.6}
   distance: 0
-  gameOverDistance: 3
+  gameOverDistance: 1.5
   ghostLocation: {x: 0, y: 0, z: 0}
   ghostChase: 10
   slowVacuumSpeed: 2
@@ -15843,7 +15845,7 @@ MonoBehaviour:
   menuMusic: {fileID: 1215195927}
   distance: 0
   vacuum: {fileID: 1388499089}
-  chased: 14
+  chased: 10
   vacuumLocation: {x: 0, y: 0, z: 0}
 --- !u!1 &1478681877
 GameObject:
@@ -19486,7 +19488,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.5625, y: 1}
+    m_SensorSize: {x: 0.561194, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
