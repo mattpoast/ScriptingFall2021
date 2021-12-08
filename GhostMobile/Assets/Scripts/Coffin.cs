@@ -60,6 +60,6 @@ public class Coffin : MonoBehaviour
     }
     public void WinGame()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(4);
     }
 }
