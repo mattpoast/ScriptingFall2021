@@ -19,6 +19,7 @@ public class TitleCanvas : MonoBehaviour
     public Text coinAmmount;
     public AudioSource notEnoughCoins;
     public AudioSource boughtSkin;
+    public AudioSource buttonClick;
     private void Awake()
     {
         CurrentColorNum = PlayerPrefs.GetInt("EquipedColor");
@@ -32,11 +33,13 @@ public class TitleCanvas : MonoBehaviour
     }
     public void StartButton()
     {
+        buttonClick.Play();
         Time.timeScale = 1;
         SceneManager.LoadScene(2);
     }
     public void Equip()
     {
+        buttonClick.Play();
         EquipedColorNum = CurrentColorNum;
         PlayerPrefs.SetInt("EquipedColor", EquipedColorNum);
         CheckMark();
@@ -44,6 +47,7 @@ public class TitleCanvas : MonoBehaviour
     }
     public void ColorChange()
     {
+        buttonClick.Play();
         CheckMark();
         SkinChecker();
         NewColor = currentColor;

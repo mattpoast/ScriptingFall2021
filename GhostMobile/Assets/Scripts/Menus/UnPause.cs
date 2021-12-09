@@ -5,6 +5,7 @@ public class UnPause : MonoBehaviour
     public GameObject pauseButton;
     public GameObject joyStick;
     public GameObject gameMusic, chaseMusic, menuMusic;
+    
     public void Start()
     {
         unPauseButton.SetActive(false);
