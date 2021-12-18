@@ -13,13 +13,13 @@ public class TitleCanvas : MonoBehaviour
     public GameObject equipButton;
     public int[] purchased;
     public GameObject checkMark;
-    public int coins;
     public int[] price;
     public Text priceText;
     public Text coinAmmount;
     public AudioSource notEnoughCoins;
     public AudioSource boughtSkin;
     public AudioSource buttonClick;
+    public int coins;
     private void Awake()
     {
         CurrentColorNum = PlayerPrefs.GetInt("EquipedColor");
@@ -35,7 +35,7 @@ public class TitleCanvas : MonoBehaviour
     {
         buttonClick.Play();
         Time.timeScale = 1;
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
     }
     public void Equip()
     {
@@ -102,6 +102,7 @@ public class TitleCanvas : MonoBehaviour
     }
     public void CoinUpdate()
     {
+        coins = PlayerPrefs.GetInt("Coins");
         coinAmmount.text = coins.ToString(); 
     }
     public void BuyButtonFunction()
@@ -151,6 +152,7 @@ public class TitleCanvas : MonoBehaviour
     public void BoughtSkin()
     {
         coins -= price[CurrentColorNum];
+        PlayerPrefs.SetInt("Coins", coins);
         coinAmmount.text = coins.ToString();
         PriceCheck();
         boughtSkin.Play();

@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: PoastProductions
-  productName: GhostMobile
+  productName: Ghost Mobile
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -149,10 +149,11 @@ PlayerSettings:
   D3DHDRBitDepth: 0
   m_ColorGamuts: 00000000
   targetPixelDensity: 30
-  resolutionScalingMode: 1
+  resolutionScalingMode: 0
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
-  applicationIdentifier: {}
+  applicationIdentifier:
+    iPhone: com.PoastProductions.GhostMobile
   buildNumber:
     Standalone: 0
     iPhone: 0
@@ -799,7 +800,7 @@ PlayerSettings:
   cloudProjectId: 39a88fab-0a84-42d0-83e3-a596e9b3fc67
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: GhostMobile
+  projectName: Ghost Mobile
   organizationId: mattpoast
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

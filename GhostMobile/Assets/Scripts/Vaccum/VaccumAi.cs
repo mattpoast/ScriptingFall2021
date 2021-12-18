@@ -103,6 +103,6 @@ public class VaccumAi : MonoBehaviour
     }
     void LoadNewSceen()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(5);
     }
 }
