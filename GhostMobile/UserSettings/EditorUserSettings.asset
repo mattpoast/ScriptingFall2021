@@ -6,34 +6,34 @@ EditorUserSettings:
   serializedVersion: 4
   m_ConfigSettings:
     RecentlyUsedScenePath-0:
-      value: 22424703114646680e0b0227036c6f1c170e11242b0f273d2867083debf42d
-      flags: 0
-    RecentlyUsedScenePath-1:
       value: 22424703114646680c031c2e153010193924587b786807343b2c0f27ebf33d36e5a705fcf72a302e2d4dbe7256705170a25b4928f9051e0e091abd3d12ed15161f8a3bca14dc1a04df592fcddf18d4ed95e5d5e7c8e7e296cbd1a9e6ed
       flags: 0
-    RecentlyUsedScenePath-2:
+    RecentlyUsedScenePath-1:
       value: 22424703114646680c031c2e153010193924587b786807343b2c0f27ebf33d36e5a705fcf72a302e2d4dbe7256705170a25b4928f9051e0e091abd3d12ed15161f8a28c008c5160fc21612ddfe1ec3e6d0d89affd6e2f3c1
       flags: 0
-    RecentlyUsedScenePath-3:
+    RecentlyUsedScenePath-2:
       value: 22424703114646680e0b0227036c6c001a160b221f2b343528275326ece92021
       flags: 0
-    RecentlyUsedScenePath-4:
+    RecentlyUsedScenePath-3:
       value: 22424703114646680e0b0227036c7b15170310192f3a23352367083debf42d
       flags: 0
-    RecentlyUsedScenePath-5:
+    RecentlyUsedScenePath-4:
       value: 22424703114646680e0b0227036c6c1319051d192f3a23352367083debf42d
       flags: 0
-    RecentlyUsedScenePath-6:
+    RecentlyUsedScenePath-5:
       value: 22424703114646680e0b0227036c6819183616232129323922275326ece92021
       flags: 0
-    RecentlyUsedScenePath-7:
+    RecentlyUsedScenePath-6:
       value: 22424703114646680e0b0227036c70121c121b3e253e23032e3b1836ecae2136ebf32f
       flags: 0
-    RecentlyUsedScenePath-8:
+    RecentlyUsedScenePath-7:
       value: 22424703114646680e0b0227036c6f15041a1139252728231e2a0f36e7ee7a2decee22f0
       flags: 0
-    RecentlyUsedScenePath-9:
+    RecentlyUsedScenePath-8:
       value: 22424703114646680e0b0227036c6c0417050c192f3a23352367083debf42d
+      flags: 0
+    RecentlyUsedScenePath-9:
+      value: 22424703114646680e0b0227036c6f1c170e11242b0f273d2867083debf42d
       flags: 0
     UnityRemoteDevice:
       value: 55570350060c590b545c5573422106164e12482c297a713575701835bbb03169e4bf6fb1e53c6739
