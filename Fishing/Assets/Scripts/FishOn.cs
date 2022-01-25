@@ -1,19 +1,25 @@
 using UnityEngine;
-public class ReelActive : MonoBehaviour
+public class FishOn : MonoBehaviour
 {
     public GameObject reel;
     public bool fishOn;
-    public Animator reelAnimator;
-    public void FishOn()
+    public void Start()
+    {
+        CheckFish();
+    }
+    private void OnMouseDown()
+    {
+        fishOn = true;
+        CheckFish();
+    }
+    public void CheckFish()
     {
         if (fishOn)
         {
-           print("FishOn");
             reel.SetActive(true);
         }
         else
         {
-            print("FishOff");
             reel.SetActive(false);
         }
     }
