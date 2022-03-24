@@ -200,6 +200,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 0
   randomPicker: 0
+  mouse: {fileID: 0}
 --- !u!1 &1268463062
 GameObject:
   m_ObjectHideFlags: 0

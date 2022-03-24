@@ -3,6 +3,7 @@ public class MouseGenerator : MonoBehaviour
 {
     public float timer;
     public int randomPicker;
+    public GameObject mouse;
     void Start()
     {
         RandomTimePicker();
@@ -27,6 +28,7 @@ public class MouseGenerator : MonoBehaviour
     public void GenerateMouse()
     {
         print("NewMouse");
+        Instantiate(mouse);
     }
     void Update()
     {
