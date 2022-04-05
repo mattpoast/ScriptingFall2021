@@ -5,10 +5,12 @@ public class PauseButton : MonoBehaviour
 
     public void Start()
     {
+        Time.timeScale = 1;
         pauseScreen.SetActive(false);
     }
     public void PauseGame()
     {
+        Time.timeScale = 0;
         pauseButton.SetActive(false);
         pauseScreen.SetActive(true);
     }
