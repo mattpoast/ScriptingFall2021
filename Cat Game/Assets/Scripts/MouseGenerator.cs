@@ -6,8 +6,9 @@ public class MouseGenerator : MonoBehaviour
     public GameObject mouse;
     public AudioSource newMouseSqueak;
     public int sideSpawner;
-    public float mouseSpeed;
-    public Vector3 newMousePosition;
+    public float xAxisValue;
+    public float yAxisValue;
+    public static float mouseRotation;
     void Start()
     {
         RandomTimePicker();
@@ -32,8 +33,8 @@ public class MouseGenerator : MonoBehaviour
     public void GenerateMouse()
     {
         newMouseSqueak.Play();
-        Instantiate(mouse, new Vector3());
-        mouse.transform.position = newMousePosition;
+        MouseSpeed.mouseSpeedValue = Random.Range(11f, 20f);
+        Instantiate(mouse,new Vector3(xAxisValue, yAxisValue), Quaternion.Euler(0,0,0));
     }
     void Update()
     {
@@ -48,7 +49,7 @@ public class MouseGenerator : MonoBehaviour
     }
     public void MouseLocation()
     {
-        mouseSpeed = Random.Range(1, 9);
+        
         sideSpawner = Random.Range(0, 4);
         if (sideSpawner == 0)
         {
@@ -69,16 +70,30 @@ public class MouseGenerator : MonoBehaviour
     }
     public void LeftWallSpawn()
     {
+        xAxisValue = -12f;
+        yAxisValue = Random.Range(-5f, 5.51f);
+       mouseRotation = 270f;
         GenerateMouse();
     }
     public void TopWallSpawn()
     {
-        
-    }public void RightWallSpawn()
+        xAxisValue = Random.Range(-9f, 9f);
+        yAxisValue = 8f;
+        mouseRotation = 180f;
+        GenerateMouse();
+    }
+    public void RightWallSpawn()
     {
-        
-    }public void BottomWallSpawn()
+        xAxisValue = 12f;
+        yAxisValue = Random.Range(-5, 5.51f);
+        mouseRotation = 90f;
+        GenerateMouse();
+    }
+    public void BottomWallSpawn()
     {
-        
+        xAxisValue = Random.Range(-9f, 9f);
+        yAxisValue = -8f;
+        mouseRotation = 0f;
+        GenerateMouse();
     }
 }
