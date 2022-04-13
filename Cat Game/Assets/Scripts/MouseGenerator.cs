@@ -3,12 +3,13 @@ public class MouseGenerator : MonoBehaviour
 {
     public float timer;
     public int randomPicker;
-    public GameObject mouse;
+    public GameObject mouseOne, mouseTwo, mouseThree;
     public AudioSource newMouseSqueak;
     public int sideSpawner;
     public float xAxisValue;
     public float yAxisValue;
     public static float mouseRotation;
+    public int mousePicker;
     void Start()
     {
         RandomTimePicker();
@@ -32,9 +33,24 @@ public class MouseGenerator : MonoBehaviour
     }
     public void GenerateMouse()
     {
-        newMouseSqueak.Play();
-        MouseSpeed.mouseSpeedValue = Random.Range(11f, 20f);
-        Instantiate(mouse,new Vector3(xAxisValue, yAxisValue), Quaternion.Euler(0,0,0));
+        if (mousePicker == 0)
+        {
+            newMouseSqueak.Play();
+            MouseSpeed.mouseSpeedValue = Random.Range(11f, 20f);
+            Instantiate(mouseOne,new Vector3(xAxisValue, yAxisValue), Quaternion.Euler(0,0,0));
+        }
+        if (mousePicker == 1)
+        {
+            newMouseSqueak.Play();
+            MouseSpeed.mouseSpeedValue = Random.Range(11f, 20f);
+            Instantiate(mouseTwo,new Vector3(xAxisValue, yAxisValue), Quaternion.Euler(0,0,0));
+        }
+        if (mousePicker == 2)
+        {
+            newMouseSqueak.Play();
+            MouseSpeed.mouseSpeedValue = Random.Range(11f, 20f);
+            Instantiate(mouseThree,new Vector3(xAxisValue, yAxisValue), Quaternion.Euler(0,0,0)); 
+        }
     }
     void Update()
     {
@@ -49,7 +65,7 @@ public class MouseGenerator : MonoBehaviour
     }
     public void MouseLocation()
     {
-        
+        mousePicker = Random.Range(0, 3);
         sideSpawner = Random.Range(0, 4);
         if (sideSpawner == 0)
         {
