@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
     path: Assets/Scenes/SlpashScreen.unity
     guid: 7513d39dcc30842668f07dfbc3c781fa
   - enabled: 1
@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MouseLevel.unity
     guid: b78dfc5d3789a4d029eb4df4ca8b8ab0
+  - enabled: 1
+    path: Assets/Scenes/LevelTwo.unity
+    guid: 267c23e996fb74606a1f1f67dadcf8df
   m_configObjects: {}
