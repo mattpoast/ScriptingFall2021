@@ -20,15 +20,15 @@ public class MouseGenerator : MonoBehaviour
       randomPicker = Random.Range(0, 3);
       if (randomPicker == 0)
       {
-          timer = Random.Range(3, 5);
+          timer = Random.Range(1, 2);
       }
       if (randomPicker == 1)
       {
-          timer = Random.Range(5, 8);
+          timer = Random.Range(2, 4);
       }
       if (randomPicker == 2)
       {
-          timer = Random.Range(6, 9);
+          timer = Random.Range(3, 5);
       }
     }
     public void GenerateMouse()
